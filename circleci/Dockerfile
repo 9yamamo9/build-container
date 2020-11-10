@@ -1,9 +1,5 @@
 FROM alpine:3.12.1
 
-ENV terraform_version=0.13.5
-
-RUN pwd
-
 RUN apk update --no-cache \
   && apk add --no-cache \
   ruby \
