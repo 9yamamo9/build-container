@@ -8,6 +8,7 @@ RUN apk update --no-cache \
   wget \
   unzip \
   curl \
+  make \
   terraform=0.12.25-r0
 
 RUN gem install miam
