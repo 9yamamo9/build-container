@@ -6,6 +6,7 @@ RUN apk update --no-cache \
   ruby-bundler \
   ruby-dev \
   wget \
+  zip \
   unzip \
   curl \
   make \
