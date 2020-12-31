@@ -12,6 +12,7 @@ RUN apk update --no-cache \
   make \
   terraform=0.12.25-r0 \
   npm=12.18.4-r0 \
-  yarn=1.22.4-r0
+  yarn=1.22.4-r0 \
+  aws-cli
 
 RUN gem install miam
