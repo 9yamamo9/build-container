@@ -1,19 +1,13 @@
-FROM alpine:3.12.1
+FROM hashicorp/terraform:0.14.9
 
 RUN apk update --no-cache \
   && apk add --no-cache \
-  ruby \
-  ruby-bundler \
-  ruby-dev \
   wget \
   zip \
   unzip \
   curl \
   make \
-  terraform=0.12.25-r0 \
-  npm=12.18.4-r0 \
-  yarn=1.22.4-r0 \
+  npm=14.16.1-r1 \
+  yarn=1.22.10-r0 \
   aws-cli \
   jq
-
-RUN gem install miam
