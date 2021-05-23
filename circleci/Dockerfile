@@ -10,4 +10,11 @@ RUN apk update --no-cache \
   npm=14.16.1-r1 \
   yarn=1.22.10-r0 \
   aws-cli \
-  jq
+  jq \
+  libc6-compat
+
+ENV GO_VERSION=1.16.4
+RUN wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
+RUN tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
+ENV PATH $PATH:/usr/local/go/bin
+RUN go version
