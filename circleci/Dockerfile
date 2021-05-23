@@ -11,7 +11,8 @@ RUN apk update --no-cache \
   yarn=1.22.10-r0 \
   aws-cli \
   jq \
-  libc6-compat
+  libc6-compat \
+  gcc
 
 ENV GO_VERSION=1.16.4
 RUN wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
