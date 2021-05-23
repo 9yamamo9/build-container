@@ -2,6 +2,8 @@ FROM hashicorp/terraform:0.14.9
 
 RUN apk update --no-cache \
   && apk add --no-cache \
+  alpine-sdk \
+  build-base \
   wget \
   zip \
   unzip \
