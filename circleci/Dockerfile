@@ -14,7 +14,13 @@ RUN apk update --no-cache \
   aws-cli \
   jq \
   libc6-compat \
-  gcc
+  gcc \
+  docker \
+  openrc
+
+RUN rc-update add docker boot
+
+RUN docker -v
 
 ENV GO_VERSION=1.16.4
 RUN wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
